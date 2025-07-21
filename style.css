@@ -4,14 +4,97 @@ body {
     background: linear-gradient(135deg, #232526 0%, #414345 100%);
     min-height: 100vh;
     margin: 0;
+}
+.navbar {
+    background: linear-gradient(90deg, #ff512f, #dd2476, #1fa2ff);
+    padding: 0.5rem 0;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 12px rgba(31,162,255,0.08);
+    margin-bottom: 24px;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+.navbar li a {
+    color: #fff;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.navbar li a:hover {
+    background: #fff;
+    color: #dd2476;
+}
+
+.footer {
+    background: linear-gradient(90deg, #1fa2ff, #12d8fa, #a6ffcb);
+    color: #232526;
+    text-align: center;
+    padding: 18px 0;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1rem;
+    border-radius: 20px 20px 0 0;
+    margin-top: 40px;
+    box-shadow: 0 -2px 12px rgba(31,162,255,0.08);
+}
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-div {
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    text-align: center;
+} 
+a {
+    color: #1100ff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.info {
+    max-width: 800px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 5px solid yellow;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    font-weight: 600;
+    padding: 32px 40px;
+    box-shadow: 0 8px 32px rgba(31,162,255,0.08);
+    animation: borderColorAnim 3s linear infinite;
+}
+.steps {
+    margin: 0;
+    padding-left: 24px;
+}
+
+.steps li {
+    margin-bottom: 18px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    background: #dba5ff;
+    border-left:5px solid #e72fff;
+    padding: 12px 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(255, 114, 86, 0.08);
+}
+
+.steps li strong {
+    color: #ff00aa;
+    margin-right: 8px;
 }
 h1 {
     font-family: 'Montserrat', Arial, sans-serif;
@@ -65,5 +148,22 @@ h1:hover {
     }
     80% {
         transform: translateY(0) scale(1);
+    }
+}
+@keyframes borderColorAnim {
+    0% {
+        border-color: #ffe600;
+    }
+    25% {
+        border-color: #ff512f;
+    }
+    50% {
+        border-color: #dd2476;
+    }
+    75% {
+        border-color: #1fa2ff;
+    }
+    100% {
+        border-color: #ffe600;
     }
 }

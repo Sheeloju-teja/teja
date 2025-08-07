@@ -7,28 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Process</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
     <div class="container">
-        <h1>TEJA</h1>
+        <h1>Company</h1>
     </div>
-    <div class="info">
-        <h3 class="heading">How I Created This Website</h3>
-        <ul class="steps">
-            <li><strong>Step 1:</strong> I used <a href="https://www.cloudflare.com/">Cloudflare</a> to host my website.</li>
-            <li><strong>Step 2:</strong> In Cloudflare, click on <b>Compute (Workers)</b> in the left navigation and go to <b>Workers & Pages</b>.</li>
-            <li><strong>Step 3:</strong> Click on <b>Create</b>.</li>
-            <li><strong>Step 4:</strong> Select <b>Import a Repository</b> to start by importing an existing Git repository.</li>
-            <li><strong>Step 5:</strong> Set up your application. It will ask for details like your Git account and project name. Provide your repository information.</li>
-            <li><strong>Step 6:</strong> Finally, click <b>Create and Deploy</b>.</li>
-            <li><strong>Step 7:</strong> You can now access your website using the provided domain.</li>
-        </ul>
-    </div>
+  
+    <!-- <div>
+        <img src="/tournament.jpg"alt="Tournament" class="responsive-img">
+    </div> -->
        <footer class="footer">
         <p>&copy; 2025 TEJA. All rights reserved.</p>
     </footer>
